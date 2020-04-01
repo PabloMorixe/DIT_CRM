@@ -8,10 +8,6 @@ require_once('dbConnection.php');
        $texta = $_POST['Servicio'];
 
 
-
-
-
-
         $t2ql =  "INSERT INTO basura ([columna1],[columna2],[columna3]) VALUES ('$texto','$texts','$texta')"; 
 
         //conexión a la base de datos
