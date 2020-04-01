@@ -26,15 +26,26 @@ $(document).ready(function(){
             <td>
                 <label>Country:</label>
                 <select class="country">
-                    <option>Select</option>
+                    <option value="seleccion">Select</option>
                     <option value="usa">United States</option>
                     <option value="india">India</option>
                     <option value="uk">United Kingdom</option>
                 </select>
             </td>
             <td id="response">
-                <!--Response will be inserted here-->
-            </td>
+            <label>Ciudad:</label>
+                <select class="City">
+                    <option>Select</option>
+                    <option value="seleccion">Seleccione Ciudad</option>
+                    <option value="usa">New York</option>
+                    <option value="usa">United States</option>
+                    <option value="usa">United States</option>
+                    <option value="india">India</option>
+                    <option value="uk">United Kingdom</option>
+                </select>
+                
+                
+                 </td>
         </tr>
     </table>
 </form>
