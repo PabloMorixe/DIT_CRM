@@ -36,12 +36,6 @@ $(document).ready(function(){
             <label>Ciudad:</label>
                 <select class="City">
                     <option>Select</option>
-                    <option value="seleccion">Seleccione Ciudad</option>
-                    <option value="usa">New York</option>
-                    <option value="usa">United States</option>
-                    <option value="usa">United States</option>
-                    <option value="india">India</option>
-                    <option value="uk">United Kingdom</option>
                 </select>
                 
                 
