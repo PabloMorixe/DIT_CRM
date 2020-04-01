@@ -7,7 +7,6 @@ sigo escribiendo para probar la sincronizac
 <<<<<<< HEAD
 
 
-JUAMPI PUTO 13:28 
 
 hola
 =======
