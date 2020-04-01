@@ -1,7 +1,7 @@
 <?php
 
 /*  //Conexión a la base de datos
- $serverName = "servidonss.dyndns.org:20002"; 
+ $serverName = "localhost"; 
  $connectionInfo = array( "Database"=>"CRM");
 
  //Utilización de la conexión a la base de datos - Cliente
@@ -9,14 +9,21 @@
  */
 
 
-
-$conn = new PDO("sqlsrv:Server=servidonss.dyndns.org,20002;Database=CRM", "usrCRM" , "T1lc4r42395");
-
-
-
-if ($conn=== false) {
+/* if ($conn=== false) {
 die("Error en la conexion a la base");
+} */
+
+$serverName = "servidonss.dyndns.org, 20002"; //serverName\instanceName, portNumber (por defecto es 1433)
+$connectionInfo = array( "Database"=>"CRM", "UID"=>"usrCRM", "PWD"=>"T1lc4r42395");
+$conn = sqlsrv_connect( $serverName, $connectionInfo);
+
+if( $conn ) {
+  
+}else{
+     echo "Conexión no se pudo establecer.<br />";
+     die( print_r( sqlsrv_errors(), true));
 }
+
 
 
 ?>
